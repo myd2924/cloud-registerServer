@@ -24,8 +24,8 @@ public class UserApplication {
 
     public UserApplication(WebClient.Builder webClientBuilder,
                            ReactorLoadBalancerExchangeFilterFunction lbFunction){
-        this.lbFunction = lbFunction;
         this.loadBalancedWebClientBuilder = webClientBuilder;
+        this.lbFunction = lbFunction;
     }
 
     public static void main(String[] args) {
